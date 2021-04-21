@@ -1,0 +1,10 @@
+import whois
+import datetime
+
+#create a "o" object of whois class
+o= whois.whois("webscraping.com")
+
+
+
+expdate=o.expiration_date
+print(expdate)
