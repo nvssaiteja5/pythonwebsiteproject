@@ -1,7 +1,7 @@
 import smtplib
 import email, getpass, imaplib, os
 import whois
-import datetime import date
+from datetime import date
 
 #create a "o" object of whois class
 webadd=input("enter the web address")
