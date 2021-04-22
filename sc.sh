@@ -2,7 +2,7 @@ pylint $1 > result
 
 SCORE=`cat result | grep rated|awk  '{print $7}' |awk -F/ '{print $1}'|awk -F. '{print $1}'`
 echo $SCORE
-if [ $SCORE -ge 10 ]
+if [ $SCORE -gt 10 ]
 then
 echo "Success"
 else
